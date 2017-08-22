@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name Fck t.co
-// @namespace kkren
+// @name remove t.co
+// @namespace https://github.com/kkren
 // @match *://twitter.com/
 // @grant none
 // require https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js
@@ -8,7 +8,6 @@
 // @downloadURL https://github.com/kkren/remove_t.co/raw/master/removetco.user.js
 // @version 0.1
 // ==/UserScript==
-//document.getElementsByClass('twitter-timeline-link').herf="google.com";
 (function() {
     function async_load() {
         var s = document.createElement("script");
