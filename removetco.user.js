@@ -5,6 +5,8 @@
 // @grant none
 // require https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js
 // @run-at document-end
+// @downloadURL https://github.com/kkren/remove_t.co/raw/master/removetco.user.js
+// @version 0.1
 // ==/UserScript==
 //document.getElementsByClass('twitter-timeline-link').herf="google.com";
 (function() {
