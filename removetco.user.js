@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name remove t.co
+// @description  Bypass t.co redirection from Twitter external links
 // @namespace https://github.com/kkren
-// @match *://twitter.com/
+// @match *://twitter.com/*
 // @grant none
 // require https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js
 // @run-at document-end
-// @downloadURL https://github.com/kkren/remove_t.co/raw/master/removetco.user.js
+// @downloadURL https://raw.githubusercontent.com/kkren/remove_t.co/master/removetco.user.js
 // @version 0.1
 // ==/UserScript==
 (function() {
@@ -19,8 +20,8 @@
   }
   if (window.attachEvent) window.attachEvent("onload", async_load);
   else window.addEventListener("load", async_load, false);
-  var i = 0;
   window.onscroll = function() {
+    var i = 0;
     var urls = $("[data-expanded-url]").length;
     for (; i < urls; i++) {
       var expanded = $("[data-expanded-url]").eq(i).attr("data-expanded-url");
