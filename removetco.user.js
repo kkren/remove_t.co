@@ -38,7 +38,7 @@ mo = new MutationObserver(function(allmutations) {
   //alert();
   replace();
 });
-var targets = document.querySelector(".stream");
+var targets = document.body;
 mo.observe(targets, {
   'childList': true,
   'characterData': true,
