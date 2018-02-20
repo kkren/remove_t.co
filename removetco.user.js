@@ -4,19 +4,12 @@
 // @namespace https://github.com/kkren
 // @match *://twitter.com/*
 // @grant none
-// @require https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js
+// @require https://cdnjs.cat.net/ajax/libs/jquery/3.3.1/jquery.slim.min.js
 // @run-at document-end
 // @downloadURL https://raw.githubusercontent.com/kkren/remove_t.co/master/removetco.user.js
 // @version 0.3
 // ==/UserScript==
-// function async_load() {
-//   var s = document.createElement("script");
-//   s.type = "text/javascript";
-//   s.async = true;
-//   s.src = "https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js";
-//   var x = document.getElementsByTagName("script")[0];
-//   x.parentNode.insertBefore(s, x);
-// }
+
 
 function replace() {
   var i = 0;
@@ -30,10 +23,7 @@ function replace() {
     $("[href*='t.co']").eq(i).attr("href", expanded);
   }
 }
-//异步加载
-// if (window.attachEvent) window.attachEvent("onload", async_load);
-// else window.addEventListener("load", async_load, false);
-
+//滚动加载
 mo = new MutationObserver(function(allmutations) {
   //alert();
   replace();
