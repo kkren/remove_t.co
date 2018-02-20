@@ -7,7 +7,7 @@
 // @require https://cdnjs.cat.net/ajax/libs/jquery/3.3.1/jquery.slim.min.js
 // @run-at document-end
 // @downloadURL https://raw.githubusercontent.com/kkren/remove_t.co/master/removetco.user.js
-// @version 0.3
+// @version 0.4
 // ==/UserScript==
 
 
