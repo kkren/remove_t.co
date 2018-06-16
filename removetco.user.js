@@ -4,10 +4,10 @@
 // @namespace https://github.com/kkren
 // @match *://twitter.com/*
 // @grant none
-// @require https://cdnjs.cat.net/ajax/libs/jquery/3.3.1/jquery.slim.min.js
+// @require https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js
 // @run-at document-end
 // @downloadURL https://raw.githubusercontent.com/kkren/remove_t.co/master/removetco.user.js
-// @version 0.4
+// @version 0.5
 // ==/UserScript==
 
 
